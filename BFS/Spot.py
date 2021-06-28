@@ -11,6 +11,7 @@ class Spot():
         
         # cost
         self.cost = 1
+        
         if random(1) < 0.6:
             self.cost = 5
             if random(1) < 0.4:

@@ -76,7 +76,7 @@ def draw():
         else:
             search = False
     else:
-        if len(openSet) > 0:
+        if len(openSet) != 0:
             current = openSet[0]
             if current != end_:
                 openSet.popleft()
@@ -90,6 +90,8 @@ def draw():
                         openSet.append(neighbor)
         else:
             print("NO SOLUTION")
+            noLoop()
+            return
          
      
     #######################
